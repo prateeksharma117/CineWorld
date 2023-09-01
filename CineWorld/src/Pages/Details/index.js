@@ -1,0 +1,6 @@
+export{default as PlayBtn} from './PlayBtn/PlayBtn'
+export{default as DetailBanner} from './DetailBanner/DetailBanner'
+export{default as Cast} from './Cast/Cast'
+export{default as VideoSection} from './VideoSection/VideoSection'
+export{default as Similar} from './Carousels/Similar'
+export{default as Recommendation} from './Carousels/Recommendation'

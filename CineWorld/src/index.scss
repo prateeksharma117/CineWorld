@@ -1,0 +1,71 @@
+/* The `:root` selector in CSS is used to target the root element of the document, which is typically
+the `<html>` element. In this case, it is used to define global CSS variables that can be used
+throughout the document. */
+:root {
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1;
+  font-weight: 500;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+
+  --black: #173340;
+  --black2: #0e1f27;
+  --black3: #132933;
+  --black-lighter: #1c4b91;
+  --black-light: #173d77;
+  --pink: #d82b1e;
+  --orange: #f89e00;
+  --pink: #ea4080;
+  --babyPink: #fda8a5;
+  --gradient: linear-gradient(98.37deg, #ea4080 0.99%, #fda8a5 100%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--black);
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* The `.skeleton` class is defining a CSS rule for creating a shimmer effect, often used to indicate
+loading or placeholder content. */
+.skeleton {
+  position: relative;
+  overflow: hidden;
+  background-color: #0a151a;
+  &::after {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      transform: translateX(-100%);
+      background-image: linear-gradient(
+          90deg,
+          rgba(#173340, 0) 0,
+          rgba(#173340, 0.2) 20%,
+          rgba(#173340, 0.5) 60%,
+          rgba(#173340, 0)
+      );
+      animation: shimmer 2s infinite;
+      content: "";
+  }
+
+  @keyframes shimmer {
+      100% {
+          transform: translateX(100%);
+      }
+  }
+}

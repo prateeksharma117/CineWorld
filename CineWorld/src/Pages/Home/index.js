@@ -1,0 +1,6 @@
+export{default as HeroBanner} from './HeroBanner/HeroBanner'
+export{default as Popular} from './Popular/Popular'
+export{default as Trending} from './Trending/Trending'
+export{default as NowPlaying} from './NowPlaying/NowPlaying'
+export{default as UpComming} from './UpComming/UpComming'
+export{default as TopRated} from './TopRated/TopRated'
