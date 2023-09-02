@@ -84,7 +84,7 @@ const Header = () => {
             TV Shows
           </li>
           <li className="menu__item">
-            <HiOutlineSearch onClick={openSearch} />
+            <HiOutlineSearch onClick={openSearch}/>
           </li>
         </ul>
 
