@@ -3,7 +3,7 @@ import { useEffect } from 'react'
 import { fetchDataFromApi } from './Utils/Api'
 import { useSelector, useDispatch } from 'react-redux'
 import { getApiConfiguration,getGenres} from './Store/HomeSlice'
-import { Error404, Details, Explore, Home, SearchResult } from './Pages'
+import {Details, Explore, Home, SearchResult, PageNotFound } from './Pages'
 import { Footer, Header } from './Component'
 import { Route, Routes } from 'react-router-dom'
 
@@ -57,7 +57,7 @@ function App() {
       <Route path='/:mediaType/:id' element={<Details/>}/>
       <Route path='/search/:query' element={<SearchResult/>}/>
       <Route path='/explore/:mediaType' element={<Explore/>}/>
-      <Route path='*' element={<Error404/>}/>
+      <Route path='*' element={<PageNotFound/>}/>
     </Routes>
     <Footer/>
     </>

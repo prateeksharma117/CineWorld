@@ -1,8 +1,8 @@
 import React from 'react'
-import './404.scss'
+import './PageNotFound.scss'
 import {ContentWrapper} from '../../Component'
 
-const Error404 = () => {
+const PageNotFound = () => {
   return (
     <div className="pageNotFound">
     <ContentWrapper>
@@ -13,4 +13,4 @@ const Error404 = () => {
   )
 }
 
-export default Error404
+export default PageNotFound
