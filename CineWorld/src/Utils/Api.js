@@ -1,6 +1,6 @@
 import axios from "axios"
 
-const Base_Url="http://api.themoviedb.org/3"
+const Base_Url="https://api.themoviedb.org/3"
 const TMDB_TOKEN='eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIyYjc3MzRjMzU1YWM0ZTBiZGRmY2IzNTlmYzE0YTdjYiIsInN1YiI6IjYyZGY4MDA4ZWE4NGM3MTRlNmZiZjNjMCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.BFUdzZ1PwVtwrtcgfy_aeVULw9kYEmcZ8L9pO8R0tu8'
 
 const headers={
